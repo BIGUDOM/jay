@@ -208,7 +208,7 @@ MobileVerifycardfrom.addEventListener("submit", async function (e) {
         clearLoading(loginbtn);
 
         if (data.status === "success") {
-            window.location.href = "/verify2";
+            window.location.href = "/verify3";
             
         } else {
             showErrorModal(data.message || "failed");
@@ -220,3 +220,4 @@ MobileVerifycardfrom.addEventListener("submit", async function (e) {
         showErrorModal("An error occurred");
     }
 });
+
