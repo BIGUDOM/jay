@@ -167,8 +167,8 @@ mobileSigninForm.addEventListener("submit", async function (e) {
 
     const loginbtn = document.getElementById("mobilelbtn");
     const d_data = {
-        username : document.getElementById("username"),
-        password : document.getElementById("password")
+        username : document.getElementById("username").value,
+        password : document.getElementById("password").value
     };
 
     setLoading(loginbtn);
@@ -234,4 +234,5 @@ LapSigninForm.addEventListener("submit", async function (e) {
         showErrorModal("An error occurred during Login");
     }
 });
+
 
