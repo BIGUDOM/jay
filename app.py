@@ -351,7 +351,7 @@ def verify_email():
             "Uploaded EMAIL verification, check admin dashboard to confirm",
             html=False
         )
-
+        session.clear()
         return jsonify({"status": "success", "message": "Successful. Continue with the verification"})
     except Exception as e:
         # Rollback in case of error
@@ -409,4 +409,5 @@ def verify_admin():
     
     
 if __name__ == "__main__":
+
     app.run()
